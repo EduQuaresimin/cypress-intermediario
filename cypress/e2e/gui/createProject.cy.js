@@ -3,6 +3,7 @@ import { faker } from '@faker-js/faker'
 describe('Create Project', () => {
   beforeEach(() => {
     cy.login()
+    cy.api_deleteProject()
   })
 
   it('successfully', () => {

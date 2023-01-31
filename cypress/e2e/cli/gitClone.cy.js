@@ -1,4 +1,4 @@
-/*import { faker } from '@faker-js/faker'
+import { faker } from '@faker-js/faker'
 
 describe('git clone', () => {
   const project = {
@@ -7,7 +7,7 @@ describe('git clone', () => {
   }
 
   beforeEach(() => {
-    cy.api_deleteProjects()
+    cy.api_deleteProject()
     cy.api_createProject(project)
   })
 
@@ -18,4 +18,4 @@ describe('git clone', () => {
       .should('contain', `# ${project.name}`)
       .and('contain', project.description)
   })
-})*/
+})
